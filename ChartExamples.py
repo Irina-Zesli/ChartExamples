@@ -3,6 +3,7 @@
 import tkinter as tk
 import chart1
 import chart2
+import chart3
 
 # функция закрытия программы
 def do_close():
@@ -29,6 +30,13 @@ btnChart2.place(x = 40, y = 165, width = 90, height = 30)
 
 lblChart2 = tk.Label(text = "Нормальное распределение")
 lblChart2.place(x = 170, y = 172)
+
+#Добавление кнопки и метки для графика 3
+btnChart3 = tk.Button(window, text = "График 3", font = ('Hevletica', 10, 'bold'), command = chart3.plot_chart)
+btnChart3.place(x = 40, y = 215, width = 90, height = 30)
+
+lblChart3 = tk.Label(text = "Столбчатая диаграмма")
+lblChart3.place(x = 172, y = 222)
 
 #Добавление кнопки закрытия программы
 button_close = tk.Button(window, text = "Закрыть", font = ('Hevletica', 10, 'bold'), command = do_close)
